@@ -57,7 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               );
                             });
                       },
-                      label: Text('With')),
+                      label: Text('With PointerInterceptor')),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
@@ -70,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               return _buildUpRelevanceAlertDialog(context);
                             });
                       },
-                      label: Text('Without')),
+                      label: Text('Without PointerInterceptor')),
                 )
               ],
             )
