@@ -1,16 +1,10 @@
 # interceptor
 
-A new Flutter project.
+A minimal Flutter project to demo a PointerInterceptor behaviour.
 
 ## Getting Started
+The page loads a PDF document in an HtmlElementView. The 2 buttons then show an AlertDialog, one
+with a PointerInterceptor wrapper and the other without.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The issue is that if you scroll the PDF file it will reload if using the PointerInterceptor and the
+document will be back at the start. If not using the PointerInterceptor the mouse clicks are lost.
